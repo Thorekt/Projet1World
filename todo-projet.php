@@ -1,15 +1,15 @@
 <?php
-    session_start();
-    require_once 'header.php';
-    if(is_connected()== false){
-        session_destroy();
-        redirect('connect.php');
-    }
+session_start();
+require_once 'header.php';
+if (is_connected() == false) {
+    session_destroy();
+    redirect('connect.php');
+}
 
-    ?>
+?>
 
 <div class="ui container">
-<h1>Le projet GeoWorld</h1>
+    <h1>Le projet GeoWorld</h1>
     <div class="ui one column grid">
         <div class="column">
             <div class="ui raised segment">
@@ -89,13 +89,17 @@
                         des pays
                         du continent asiatique.
                     </li>
-                    <li>Ajouter une entrée dans la barre de menu afin de permettre à l'utilisateur de sélectionner un continent (et d'en afficher les pays).
+                    <li>Ajouter une entrée dans la barre de menu afin de permettre à l'utilisateur de sélectionner un
+                        continent (et d'en afficher les pays).
                         Pour cela, vous utiliserez un menu <b><code>Dropdown</code></b>, après avoir consulté
-                        ses spécifications ici : <a href="https://semantic-ui.com/modules/dropdown.html">https://semantic-ui.com/modules/dropdown.html</a> </li>
+                        ses spécifications ici : <a href="https://semantic-ui.com/modules/dropdown.html">https://semantic-ui.com/modules/dropdown.html</a>
+                    </li>
                 </ol>
                 <p>À l'issue de ce travail, vous serez prêt à vous engager plus en avant dans ce projet.</p>
-                <p>N'hésitez pas à explorer <a href="https://semantic-ui.com/introduction/getting-started.html">https://semantic-ui.com/</a>, vous y découvrirez
-                    les <b><code>Elements</code></b>, <b><code>Collections</code></b>, <b><code>Views</code></b> et <b><code>Modules</code></b> prêts à l'emploi, et en démonstration.</p>
+                <p>N'hésitez pas à explorer <a href="https://semantic-ui.com/introduction/getting-started.html">https://semantic-ui.com/</a>,
+                    vous y découvrirez
+                    les <b><code>Elements</code></b>, <b><code>Collections</code></b>, <b><code>Views</code></b> et
+                    <b><code>Modules</code></b> prêts à l'emploi, et en démonstration.</p>
             </div>
         </div>
     </div>

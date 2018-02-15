@@ -1,14 +1,14 @@
 <?php
-    require_once 'header.php';
-    require_once 'inc/manager-db.php';
-    require_once 'inc/fct_affichage.php';
+require_once 'header.php';
+require_once 'inc/manager-db.php';
+require_once 'inc/fct_affichage.php';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <!-- Standard Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
@@ -69,11 +69,11 @@
     <script src="semantic/components/transition.js"></script>
     <script>
         $(document)
-            .ready(function() {
+            .ready(function () {
                 console.log("execution de codes JS après chargement de la page");
 
                 $('.ui.menu a.item')
-                    .on('click', function() {
+                    .on('click', function () {
                         $(this)
                             .addClass('active')
                             .siblings().removeClass('active')
@@ -112,9 +112,6 @@
             <a class="item" href="index.php?continent=Oceania">Oceanie</a>
         </div>
     </div>
-
-
-
 
 
     <div class="ui item floated dropdown secondary button">
@@ -171,14 +168,11 @@
     </div>
 
 
-
-
-
     <div class="right menu">
         <?php if (isset($grade)): ?>
-        <a class="ui item" href="disc.php">
-            Logout
-        </a>
+            <a class="ui item" href="disc.php">
+                Logout
+            </a>
         <?php endif; ?>
         <?php if (isset($_SESSION['mail'])): ?>
             <a class="ui item" href="Gestion_acc.php">
