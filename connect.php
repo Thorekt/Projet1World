@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+require_once './header.php';
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
 }
@@ -17,7 +17,7 @@ if (isset($_GET['code'])) {
                         <h1>Vous vous etes déconnecté</h1>
                     <?php endif; ?>
                 <?php endif; ?>
-                <form class="ui form success error" method="post" action="inc/traitement_conn.php">
+                <form class="ui form success error" method="post" action="./inc/traitement_conn.php">
                     <div class="field">
                         <label>Mail : </label>
                         <input class="" type="email" name="mail" placeholder="Mail"/><br/>
@@ -34,7 +34,7 @@ if (isset($_GET['code'])) {
             </div>
         </div>
         <div class="center aligned column">
-            <form class="ui form success error" method="post" action="inc/traitement_inscr.php">
+            <form class="ui form success error" method="post" action="./inc/traitement_inscr.php">
                 <a class="ui red ribbon label">Inscription</a>
                 <?php if (isset($code)): ?>
                     <?php if ($code == 0): ?>
@@ -61,6 +61,6 @@ if (isset($_GET['code'])) {
     </div>
 </div>
 <?php
-require_once 'javascripts.php';
-require_once 'footer.php';
+require_once './javascripts.php';
+require_once './footer.php';
 ?>

@@ -1,13 +1,13 @@
 <?php
-require_once 'header.php';
+require_once './header.php';
 if (is_connected() == false) {
     session_destroy();
-    redirect('connect.php');
+    redirect('./connect.php');
 }
 if (isset($_GET['id'])) {
     $idCountry = $_GET['id'];
 } else {
-    redirect('index.php');
+    redirect('./index.php');
 }
 $pays = getOneContry($idCountry);
 ?>
@@ -32,7 +32,7 @@ $pays = getOneContry($idCountry);
                         <tr class='center aligned'>
                             <td><?php echo champsVideOrNot($pays[0]->LocalName) ?> </td>
                             <td>
-                                <a href="liste_city.php?id=<?php echo($pays[0]->Capital) ?>"><?php echo(getOneCity($pays[0]->Capital)->Name) ?> </a>
+                                <a href="./liste_city.php?id=<?php echo($pays[0]->Capital) ?>"><?php echo(getOneCity($pays[0]->Capital)->Name) ?> </a>
                             </td>
                             <td><?php echo champsVideOrNot($pays[0]->Continent) ?> </td>
                             <td class='right aligned'><?php echo champsVideOrNot($pays[0]->SurfaceArea . " km²") ?>  </td>
@@ -65,6 +65,6 @@ $pays = getOneContry($idCountry);
     </div>
 </div>
 <?php
-require_once 'javascripts.php';
-require_once 'footer.php';
+require_once './javascripts.php';
+require_once './footer.php';
 ?>

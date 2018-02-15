@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once 'header.php';
+require_once './header.php';
 $iscon = is_connected();
 if ($iscon == false) {
     session_destroy();
-    redirect('connect.php');
+    redirect('./connect.php');
 }
 $continent = $_GET['continent'];
 if (isset($_GET['continent'])) {
@@ -29,7 +29,7 @@ if (isset($_GET['continent'])) {
                     <tbody>
                     <?php foreach ($payscont as $pays): ?>
                         <tr class='center aligned'>
-                            <td><a href="country.php?id=<?php echo("$pays->id") ?>"><?php echo("$pays->Name") ?> </a>
+                            <td><a href="./country.php?id=<?php echo("$pays->id") ?>"><?php echo("$pays->Name") ?> </a>
                             </td>
                             <td class='right aligned'><?php echo champsVideOrNot("$pays->SurfaceArea km²") ?>  </td>
                             <td class='right aligned'><?php echo champsVideOrNot("$pays->Population d'hab") ?> </td>
@@ -44,6 +44,6 @@ if (isset($_GET['continent'])) {
 </div>
 
 <?php
-require_once 'javascripts.php';
-require_once 'footer.php';
+require_once './javascripts.php';
+require_once './footer.php';
 ?>

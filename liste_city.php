@@ -1,8 +1,8 @@
 <?php
-require_once 'header.php';
+require_once './header.php';
 if (is_connected() == false) {
     session_destroy();
-    redirect('connect.php');
+    redirect('./connect.php');
 }
 $continent = $_GET['continent'];
 $payscont = getCountriesByContinent($continent);

@@ -9,7 +9,7 @@ if (!empty($mail) and !empty($pswd) and !empty($nom) and !empty($pren) and getID
     $getId = getAUTH($mail, $pswd);
     $ID_user = $getId[0]->ID_u;
     setGrade($ID_user, 1);
-    header('location: connect.php?code=0');
+    header('location: ./connect.php?code=0');
 } else {
-    header('location: connect.php?code=1');
+    header('location: ./connect.php?code=1');
 }

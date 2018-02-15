@@ -1,7 +1,7 @@
 <?php
-require_once 'header.php';
-require_once 'inc/manager-db.php';
-require_once 'inc/fct_affichage.php';
+require_once './header.php';
+require_once './inc/manager-db.php';
+require_once './inc/fct_affichage.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,60 +13,60 @@ require_once 'inc/fct_affichage.php';
 
     <!-- Site Properties -->
     <title>Homepage - Semantic</title>
-    <link rel="stylesheet" type="text/css" href="semantic/components/accordion.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/ad.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/breadcrumb.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/button.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/card.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/checkbox.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/comment.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/container.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/dimmer.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/embed.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/feed.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/flag.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/form.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/header.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/image.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/input.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/item.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/label.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/list.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/loader.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/message.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/modal.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/nag.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/popup.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/progress.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/rail.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/rating.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/reset.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/reveal.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/search.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/shape.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/site.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/statistic.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/step.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/sticky.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/tab.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/table.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/transition.css">
-    <link rel="stylesheet" type="text/css" href="semantic/components/video.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/accordion.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/ad.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/button.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/card.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/comment.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/container.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/embed.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/feed.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/flag.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/form.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/header.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/image.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/input.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/item.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/label.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/list.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/loader.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/message.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/modal.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/nag.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/popup.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/progress.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/rail.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/rating.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/reveal.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/search.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/shape.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/site.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/statistic.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/step.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/sticky.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/tab.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/table.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/transition.css">
+    <link rel="stylesheet" type="text/css" href="./semantic/components/video.css">
 
     <!-- Regles CSS définies ou redéfinies, pour cette application -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
-    <script src="assets/library/jquery.min.js"></script>
-    <script src="semantic/components/visibility.js"></script>
-    <script src="semantic/components/sidebar.js"></script>
-    <script src="semantic/components/transition.js"></script>
+    <script src="./assets/library/jquery.min.js"></script>
+    <script src="./semantic/components/visibility.js"></script>
+    <script src="./semantic/components/sidebar.js"></script>
+    <script src="./semantic/components/transition.js"></script>
     <script>
         $(document)
             .ready(function () {
@@ -97,19 +97,19 @@ require_once 'inc/fct_affichage.php';
 <body>
 <div class="ui pointing menu inverted fixed">
 
-    <a class="item" href='index.php' id="home">
+    <a class="item" href='./index.php' id="home">
         GeoWorld
     </a>
 
     <div class="ui item floated dropdown secondary button">
         <span class="text">Continent<i class="dropdown icon"></i></span>
         <div class="menu">
-            <a class="item" href="index.php?continent=Africa">Affrique</a>
-            <a class="item" href="index.php?continent=Asia">Asie</a>
-            <a class="item" href="index.php?continent=North America">Amérique du nord</a>
-            <a class="item" href="index.php?continent=South America">Amérique du sud</a>
-            <a class="item" href="index.php?continent=Europe">Europe</a>
-            <a class="item" href="index.php?continent=Oceania">Oceanie</a>
+            <a class="item" href="./index.php?continent=Africa">Affrique</a>
+            <a class="item" href="./index.php?continent=Asia">Asie</a>
+            <a class="item" href="./index.php?continent=North America">Amérique du nord</a>
+            <a class="item" href="./index.php?continent=South America">Amérique du sud</a>
+            <a class="item" href="./index.php?continent=Europe">Europe</a>
+            <a class="item" href="./index.php?continent=Oceania">Oceanie</a>
         </div>
     </div>
 
@@ -170,19 +170,19 @@ require_once 'inc/fct_affichage.php';
 
     <div class="right menu">
         <?php if (isset($grade)): ?>
-            <a class="ui item" href="inc/disc.php">
+            <a class="ui item" href="./inc/disc.php">
                 Logout
             </a>
         <?php endif; ?>
         <?php if (isset($_SESSION['mail'])): ?>
-            <a class="ui item" href="Gestion_acc.php">
+            <a class="ui item" href="./Gestion_acc.php">
                 Gestion
             </a>
-            <a class="ui item" href="inc/disc.php">
+            <a class="ui item" href="./inc/disc.php">
                 Logout
             </a>
         <?php endif; ?>
-        <a class="item" href="todo-projet.php">
+        <a class="item" href="./todo-projet.php">
             ProjetPPE-SLAM
         </a>
         <div class="item">
