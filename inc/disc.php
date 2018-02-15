@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once './inc/manager-db.php';
-require_once './inc/fct_affichage.php';
+require_once './manager-db.php';
+require_once './fct_affichage.php';
 session_unset();
 session_destroy();
-header('location: ./connect.php?code=3');
+header('location: ../connect.php?code=3');

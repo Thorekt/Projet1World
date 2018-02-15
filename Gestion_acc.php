@@ -5,10 +5,7 @@ if (is_connected() == false) {
     session_destroy();
     redirect('./connect.php');
 }
-if (isset($_SESSION['mail']) and isset($_SESSION['pswd'])) {
-    $getId = getAUTH($_SESSION['mail'], $_SESSION['pswd']);
-    $ID_user = $getId[0]->ID_u;
-}
+$data = getAUTH($_SESSION['mail'], $_SESSION['pswd']);
 ?>
 <!DOCTYPE html>
 <div class="ui container main">
