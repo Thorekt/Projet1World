@@ -68,13 +68,12 @@ if (is_connected() == false) {
                     <li>Permettre à des collaborateurs de mettre à jour des données</li>
                     <li>Un proposition pour les plus avancés:
                         <p>Permettre à l'enseignant de mettre au point des requêtes d'interrogation
-                            personnalisées (SQL SELECT)</li>
-                    </p>
+                            personnalisées (SQL SELECT)</p>
+                    </li>
                     <ol>
                         <li>Les requêtes pourront être sauvegardées et nommées</li>
                         <li>Les requêtes pourront avoir une portée publique ou privée</li>
                     </ol>
-                    </li>
                 </ul>
             </div>
         </div>

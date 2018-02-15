@@ -22,9 +22,11 @@ if (isset($_GET['continent'])) {
 
                 <table class="ui celled structured striped table">
                     <thead>
-                    <th class="single line center aligned">Nom</th>
-                    <th class="single line center aligned">Surface</th>
-                    <th class="single line center aligned">Population</th>
+                    <tr>
+                        <th class="single line center aligned">Nom</th>
+                        <th class="single line center aligned">Surface</th>
+                        <th class="single line center aligned">Population</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <?php foreach ($payscont as $pays): ?>

@@ -20,13 +20,15 @@ $pays = getOneContry($idCountry);
                 <div>
                     <table class="ui celled structured striped table">
                         <thead>
-                        <th class="single line center aligned">Nom local</th>
-                        <th class="center aligned">Capitale</th>
-                        <th class="center aligned">Continent</th>
-                        <th class="center aligned">Surface</th>
-                        <th class="center aligned">Population</th>
-                        <th class="center aligned">Region</th>
-                        <th class="center aligned">Date de l'indépendance</th>
+                        <tr>
+                            <th class="single line center aligned">Nom local</th>
+                            <th class="center aligned">Capitale</th>
+                            <th class="center aligned">Continent</th>
+                            <th class="center aligned">Surface</th>
+                            <th class="center aligned">Population</th>
+                            <th class="center aligned">Region</th>
+                            <th class="center aligned">Date de l'indépendance</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr class='center aligned'>
@@ -45,10 +47,12 @@ $pays = getOneContry($idCountry);
                     </table>
                     <table class="ui celled structured striped table">
                         <thead>
-                        <th class="single line center aligned">PIB</th>
-                        <th class="center aligned">Ancien PIB</th>
-                        <th class="center aligned">Forme de gouvernement</th>
-                        <th class="center aligned">Durée de vie moyenne</th>
+                        <tr>
+                            <th class="single line center aligned">PIB</th>
+                            <th class="center aligned">Ancien PIB</th>
+                            <th class="center aligned">Forme de gouvernement</th>
+                            <th class="center aligned">Durée de vie moyenne</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr class='center aligned'>
