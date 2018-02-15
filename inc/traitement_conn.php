@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'inc/manager-db.php';
+require_once './inc/manager-db.php';
 $mail = $_POST['mail'];
 $pswd = md5($_POST['pswd']);
 $result = getAUTH($mail, $pswd);

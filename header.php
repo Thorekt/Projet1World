@@ -170,7 +170,7 @@ require_once 'inc/fct_affichage.php';
 
     <div class="right menu">
         <?php if (isset($grade)): ?>
-            <a class="ui item" href="disc.php">
+            <a class="ui item" href="inc/disc.php">
                 Logout
             </a>
         <?php endif; ?>
@@ -178,7 +178,7 @@ require_once 'inc/fct_affichage.php';
             <a class="ui item" href="Gestion_acc.php">
                 Gestion
             </a>
-            <a class="ui item" href="disc.php">
+            <a class="ui item" href="inc/disc.php">
                 Logout
             </a>
         <?php endif; ?>

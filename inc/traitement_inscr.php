@@ -1,5 +1,5 @@
 <?php
-require_once 'inc/manager-db.php';
+require_once './inc/manager-db.php';
 $mail = $_POST['mail'];
 $pswd = md5($_POST['pswd']);
 $nom = $_POST['nom'];

@@ -16,7 +16,7 @@ if (isset($_SESSION['mail']) and isset($_SESSION['pswd'])) {
         <div class="column">
             <div class="ui raised segment">
                 <a class="ui red ribbon label">Gestion du compte</a>
-                <form class="ui form success error" method="post" action="traitement_inscr.php">
+                <form class="ui form success error" method="post" action="inc/traitement_inscr.php">
                     <div class="field">
                         <label>Nom : </label>
                         <input class="" type="text" name="nom" placeholder="<?php echo $data[0]->Nom ?>"/><br/>
