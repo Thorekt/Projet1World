@@ -28,18 +28,22 @@ if (isset($_GET['code'])) {
                 </form>
             </div>
         </div>
-        <div class="ui vertical divider">OU</div>
+        <div class="divider-column">
+            <div class="ui vertical divider">
+                OU
+            </div>
+        </div>
         <div class="center aligned column">
-            <a class="ui red ribbon label">Inscription</a>
-            <?php if (isset($code)): ?>
-                <?php if ($code == 0): ?>
-                    <h1>Inscription validée</h1>
-                <?php endif; ?>
-                <?php if ($code == 1): ?>
-                    <h1>champs mal remplis</h1>
-                <?php endif; ?>
-            <?php endif; ?>
             <form class="ui form success error" method="post" action="traitement_inscr.php">
+                <a class="ui red ribbon label">Inscription</a>
+                <?php if (isset($code)): ?>
+                    <?php if ($code == 0): ?>
+                        <h1>Inscription validée</h1>
+                    <?php endif; ?>
+                    <?php if ($code == 1): ?>
+                        <h1>champs mal remplis</h1>
+                    <?php endif; ?>
+                <?php endif; ?>
                 <div class="field">
                     <label>Nom : </label>
                     <input class="" type="text" name="nom" placeholder="Nom"/><br/>

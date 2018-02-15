@@ -10,3 +10,12 @@ body > .ui.container {
     text-align: center;
     font-weight: normal;
 }
+
+body {
+    padding: 1em;
+}
+
+.divider-column {
+    position: relative;
+    padding: 0 !important;
+}
