@@ -83,7 +83,7 @@ function inscr($mail, $pswd, $nom, $pren)
     return;
 }
 
-function udpAcc($ID_u, $mail, $pswd, $nom, $pren)
+function updAcc($ID_u, $mail, $pswd, $nom, $pren)
 {
     global $pdo;
     $query = 'UPDATE USER_SITE SET Mail=:mail AND PSWD=:pswd AND Nom=:nom AND Prenom=:pren WHERE ID_u=:ID_u;';
