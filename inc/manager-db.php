@@ -80,27 +80,21 @@ function inscr($mail, $pswd, $nom, $pren)
     $prep->bindValue(':nom', $nom, PDO::PARAM_STR);
     $prep->bindValue(':pren', $pren, PDO::PARAM_STR);
     $prep->execute();
+    return;
 }
 
-function getID_U($mail, $pswd)
+function udpAcc($ID_u, $mail, $pswd, $nom, $pren)
 {
     global $pdo;
-    $query = $query = 'SELECT ID_u FROM USER_SITE WHERE Mail=:mail AND PSWD=:pswd;';
-    $prep = $pdo->prepare($query);
-    $prep->bindValue(':mail', $mail, PDO::PARAM_STR);
-    $prep->bindValue(':pswd', $pswd, PDO::PARAM_STR);
-    $prep->execute();
-    return $prep->fetchAll();
-}
-
-function setGrade($ID_u, $ID_g)
-{
-    global $pdo;
-    $query = 'INSERT INTO USER_GRADE(id_user,id_grade) VALUES (:ID_u,:ID_g) ;';
+    $query = 'UPDATE USER_SITE SET Mail=:mail AND PSWD=:pswd AND Nom=:nom AND Prenom=:pren WHERE ID_u=:ID_u;';
     $prep = $pdo->prepare($query);
     $prep->bindValue(':ID_u', $ID_u, PDO::PARAM_INT);
-    $prep->bindValue(':ID_g', $ID_g, PDO::PARAM_INT);
+    $prep->bindValue(':mail', $mail, PDO::PARAM_STR);
+    $prep->bindValue(':pswd', $pswd, PDO::PARAM_STR);
+    $prep->bindValue(':nom', $nom, PDO::PARAM_STR);
+    $prep->bindValue(':pren', $pren, PDO::PARAM_STR);
     $prep->execute();
+    return;
 }
 
 function getGrade($ID_u)

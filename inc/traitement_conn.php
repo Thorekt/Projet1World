@@ -7,8 +7,8 @@ $result = getAUTH($mail, $pswd);
 if ($result != false) {
     $_SESSION['mail'] = $mail;
     $_SESSION['pswd'] = $pswd;
-    $_SESSION['nom'] = $result[0]->Nom;
-    $_SESSION['prenom'] = $result[0]->Prenom;
+    $_SESSION['nom'] = $result['Nom'];
+    $_SESSION['prenom'] = $result['Prenom'];
     header('location: ../index.php');
 } else {
     header('location: ../connect.php?code=2');

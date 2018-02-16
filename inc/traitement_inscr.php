@@ -4,7 +4,7 @@ $mail = $_POST['mail'];
 $pswd = md5($_POST['pswd']);
 $nom = $_POST['nom'];
 $pren = $_POST['pren'];
-if (!empty($mail) and !empty($pswd) and !empty($nom) and !empty($pren) and getID_U($mail, $pswd) == false) {
+if (!empty($mail) and !empty($pswd) and !empty($nom) and !empty($pren) and getAUTH($mail, $pswd) == false) {
     inscr($mail, $pswd, $nom, $pren);
     $getId = getAUTH($mail, $pswd);
     $ID_user = $getId[0]->ID_u;
