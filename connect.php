@@ -34,8 +34,8 @@ if (isset($_GET['code'])) {
             </div>
         </div>
         <div class="center aligned column">
+            <a class="ui red ribbon label">Inscription</a>
             <form class="ui form success error" method="post" action="./inc/traitement_inscr.php">
-                <a class="ui red ribbon label">Inscription</a>
                 <?php if (isset($code)): ?>
                     <?php if ($code == 0): ?>
                         <h1>Inscription validée</h1>
