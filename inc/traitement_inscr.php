@@ -7,7 +7,7 @@ $pren = $_POST['pren'];
 if (!empty($mail) and !empty($pswd) and !empty($nom) and !empty($pren) and getAUTH($mail, $pswd) == false) {
     inscr($mail, $pswd, $nom, $pren);
     $getId = getAUTH($mail, $pswd);
-    $ID_user = $getId[0]->ID_u;
+    $ID_user = $getId['ID_u'];
     setGrade($ID_user, 1);
     header('location: ../connect.php?code=0');
 } else {
